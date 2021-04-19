@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- material icon -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        />
+    
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+        <!-- My JS -->
+        <script src="js/script.js"></script>
+    
+        <!-- My CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+    
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/996973c893.js"></script>
+    
+        <!-- Google Font -->
+        <link
+          href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+          rel="stylesheet"
+        />
+    
+        <title>focus timer</title>
+      </head>
+
+<body onload="template()">
+    <!-- Title -->
+    <div id="content" class="container">
+        <h1 class="text-center my-5 heading">Focus Timer</h1>
+
+    <!-- Timer -->
+        <div class="container timer" id="clock">
+            <span></span>
+            <div class="row">
+                <div class="col-5">
+                    <h4 id="minutes"></h4>
+                </div>
+                <div class="col-2">
+                    <h4>:</h4>
+                </div>
+                <div class="col-5">
+                    <h4 id="seconds"></h4>
+                </div>
+            </div>
+        </div>
+
+    <!-- start and restart button -->
+        <div class="icon" style="z-index: -1;">
+            <button class="btn" onclick="start()"><i class="fas fa-play fa-2x"></i></button>
+            <a href="index.html"><i class="fas fa-redo-alt fa-2x"></i></a>
+        </div>
+        
+        <div>
+            <h4 id="done" class ="text-center my-5"></h4>
+        </div>
+
+    <!-- Bottom App Bar -->
+    <div id="nav">
+
+        <nav   class="nav nav-pills nav-justified position-fixed">
+            <a class="nav__link px-0" href="home.html">
+                <i class="material-icons nav__icon m-0">home</i>
+                <span class="nav__text">Home</span>
+            </a>
+            <a class="nav__link px-0" href="timer.html">
+                <i class="material-icons nav__icon m-0">timer</i>
+                <span class="nav__text">Timer</span>
+            </a>
+            <a class="nav__link px-0" href="quotes.html">
+                <i class="material-icons nav__icon m-0">favorite</i>
+                <span class="nav__text">Quotes</span>
+            </a>
+            <a class="nav__link px-0" href="todo.html">
+                <i class="material-icons nav__icon m-0">book</i>
+                <span class="nav__text">Todo</span>
+            </a>
+        </nav>
+
+    </div>
+    </div>
+</body>
+</html>
+
+
+ 
+
+
+
+
+
+
+
